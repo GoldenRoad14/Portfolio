@@ -175,7 +175,7 @@
     width: 200px;
     border-radius: 50%;
     background-color:#F2762E;
-    margin-top: 25px%;
+    margin-top: 25px;
     z-index: inherit;
 }
 .circle-3 {
@@ -199,7 +199,7 @@
 .portfolio {
     display:flex;
     background-color:#018ABF;
-    width: 100%
+    width: 100%;
     height: 100vh;
 }
 
