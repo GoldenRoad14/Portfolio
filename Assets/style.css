@@ -1,0 +1,354 @@
+:root {
+    --henderson-font: 'henderson-slab-basic';
+    --josefin-font: 'josefin-sans';
+    --hoosier-font: 'hoosier-daddy';
+    --carlmarx-font: 'carlmarx';
+    
+}
+
+* {
+    background-color: #FFF1D8;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing:border-box;
+    margin:0px;
+}
+
+/* fonts: Josefin Sans, Hoosier Daddy, Henderson Slab, CarlMarx */
+
+
+
+/* nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 200px;
+    background-color: #F2762E;
+} */
+
+.container {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 200px;
+    background-color: #F2762E;
+
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 100;
+}
+
+.nav-bar-left {
+    background-color: #f2762e;
+}
+.nav-bar-left h1{
+    display:flex;
+    font-family: var(--henderson-font);
+    color: black;
+    text-shadow: -3px 0px 0px #018ABF;
+    font-size: 50px;
+    background-color: #F2762E;
+    margin: 50px;
+}
+
+.nav-bar-right {
+    display:flex;
+    flex-direction:row;
+    height: 150px;
+    align-items:flex-end;
+    background-color:#F2762E;
+    margin: 20px;
+}
+
+.nav-box {
+    display:flex;
+    background-color: #F21D2F;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    align-items:center;
+    justify-content:center;
+    border-radius:0;
+}
+
+.nav-box:hover{
+    border-radius: 20px 0 0 0;
+}
+
+.nav-box p {
+    background-color:#F21D2F;
+    font-family: var(--josefin-font);
+    transform: rotate(-45deg);
+    font-size: 20px;
+}
+
+.nav-box p:hover {
+    color: white;
+}
+
+.hero {
+    margin-top:200px;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right:0px;
+    background-image: url("Hero-Image.png");
+    background-size:100% auto;
+    background-position: 0 0;
+    background-repeat:no-repeat;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 759px;
+}
+
+.about{
+    display:flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.headshot {
+    display:flex;
+    position:relative;
+    top: 150px;
+    left:60%;
+    z-index:4;
+    background-image: url(Headshot.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.about-rectangle {
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    height:500px;
+    width: 50%;
+    background-color:#018ABF;
+    mix-blend-mode:multiply;
+    position:relative;
+    top: 150px;
+    left: -200px;
+    z-index: 2;
+    
+}
+
+.about-rectangle-text h3 {
+    display:flex;
+    position:relative;
+    z-index: 3;
+    background-color:#018ABF;
+    /* mix-blend-mode: multiply; */
+    color: white;
+    font-family: var(--josefin-font);
+    font-size: 36;
+    padding: 0px 150px 0px 100px;
+}
+
+.inline-circles{
+    display:flex;
+    flex-direction:column;
+    margin-left: 10%;
+    width: 250px;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    z-index: 1
+}
+
+.circle-1 {
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    background-color:#F2762E;
+    align-content:center;
+    margin: 25px;
+    z-index: inherit;
+}
+.circle-2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color:#F2762E;
+    margin-top: 25px%;
+    z-index: inherit;
+}
+.circle-3 {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    background-color:#F2762E;
+    margin-top: 25px;
+    z-index: inherit;
+}
+.circle-4 {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color:#F2762E;
+    margin-top: 25px;
+    z-index: inherit;
+}
+
+
+.portfolio {
+    display:flex;
+    background-color:#018ABF;
+    width: 100%
+    height: 100vh;
+}
+
+.project-1 {
+    display:flex;
+    background-color: #F2C12E;
+    filter: drop-shadow(black 10px 10px 0);
+    height: 500px;
+    width: 500px;
+    border-radius: 0 100px 0 0;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    z-index: 10;
+    
+}
+
+.project-2 {
+    display:flex;
+    background-color: #F21D2F;
+    filter: drop-shadow(black 10px 10px 0);
+    height: 200px;
+    width: 200px;
+    border-radius: 0 0 0 0;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    z-index: 9;
+}
+
+.project-3 {
+    display:flex;
+    background-color:#018ABF;
+    filter: drop-shadow(black 10px 10px 0);
+    height: 200px;
+    width: 200px;
+    border-radius: 0 0 0 0;
+    margin-top: 5%;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    z-index: 8;
+}
+
+.project-4 {
+    display:flex;
+    background-color: #f2762e;
+    filter: drop-shadow(black 10px 10px 0);
+    height: 200px;
+    width: 200px;
+    border-radius: 0 0 0 0;
+    margin-top: 375px;
+    margin-left: -450px;
+    margin-bottom: 25px;
+    z-index: 7;
+}
+
+.project-5 {
+    display:flex;
+    background-color: #000000;
+    filter: drop-shadow(black 10px 10px 0);
+    height: 200px;
+    width: 200px;
+    border-radius: 0 0 0 0;
+    margin-top: 375px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    z-index: 6;
+}
+
+.contact {
+    display:flex;
+    /* height:50%;
+    width:auto; */
+    background-color:#FFF1D8;
+    align-content: center;
+}
+
+.dashed-box{
+    display:flex;
+    position: absolute;
+    height: 50vh;
+    width:97vw;
+    border-style:dashed;
+    border-width: 10px;
+    border-color:#018ABF;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    z-index: 1;
+    align-items: center;
+}
+
+.contact-info h3{
+    font-family: var(--hoosier-font);
+    z-index: 10;
+    position: absolute;
+    float:left;
+    margin-left: 8%;
+    margin-top: 8%;
+    font-size: 50pt;
+    
+}
+
+.contact-circle-1 {
+    z-index: 8;
+    position: absolute;
+    float: left;
+    margin-top: 8%;
+    margin-left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(Social\ Icons-02.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-circle-2 {
+    z-index: 8;
+    position: absolute;
+    float: left;
+    margin-top: 8%;
+    margin-left: 60%;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(Social\ Icons-03.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-circle-3 {
+    z-index: 8;
+    position: absolute;
+    float: left;
+    margin-top: 8%;
+    margin-left: 70%;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(Social\ Icons-04.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
